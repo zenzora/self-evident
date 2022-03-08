@@ -25,11 +25,7 @@ function walk(node) {
 function handleText(textNode) {
 	var v = textNode.nodeValue
 
-	v = v.replace(/\bThought Leader\b/g, "Thought Haver")
-	v = v.replace(/\bThought leader\b/g, "Thought haver")
-	v = v.replace(/\bthought Leader\b/g, "thought Haver")
-	v = v.replace(/\bthought leader\b/g, "thought haver")
-	v = v.replace(/\bthought leadership\b/gi, "thought haverness")
+	v = v.replace(/\bIt is said that\b/g, "I have no sources or evidence for this, but")
 
 	textNode.nodeValue = v
 }
